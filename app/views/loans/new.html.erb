@@ -1,0 +1,21 @@
+<h1>Loan payment counter</h1>
+<%= form_for :loan do |f| %>
+  <p>
+    <%= f.label :amount_in_usd %><br>
+    <%= f.number_field :amount_in_usd %>
+  </p>
+
+  <p>
+    <%= f.label :percentage_for_one_year %><br>
+    <%= f.number_field :percentage_for_one_year %>
+  </p>
+
+  <p>
+    <%= f.label :term_in_months %><br>
+    <%= f.number_field :term_in_months %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
