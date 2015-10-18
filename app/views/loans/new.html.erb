@@ -1,5 +1,5 @@
 <h1>Loan payment counter</h1>
-<%= form_for :loan do |f| %>
+<%= form_for :loan, url: loans_count_path do |f| %>
   <p>
     <%= f.label :amount_in_usd %><br>
     <%= f.number_field :amount_in_usd %>
@@ -16,6 +16,6 @@
   </p>
 
   <p>
-    <%= f.submit %>
+    <%= f.submit "Count monthly payments"%>
   </p>
 <% end %>
